@@ -43,13 +43,12 @@ public class LabFragment extends Fragment{
         // Inflate the layout for this fragment
         ib=(ImageButton)view.findViewById(R.id.lab1);
         ib2=(ImageButton)view.findViewById(R.id.lab2);
-        Fragment frag,frag2;
         manager = (FragmentManager) getFragmentManager();
         ib.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v)
             {
                 switch (v.getId()) {
-                    case R.id.button:
+                    case R.id.lab1:
                         tran = manager.beginTransaction();
                         Fragment frag = new FacebookLink();
                         tran.replace(R.id.lab, frag);
@@ -62,7 +61,7 @@ public class LabFragment extends Fragment{
             public void onClick(View v)
             {
                 switch (v.getId()) {
-                    case R.id.button:
+                    case R.id.lab2:
                         tran = manager.beginTransaction();
                         Fragment frag = new FacebookLink();
                         tran.replace(R.id.lab, frag);

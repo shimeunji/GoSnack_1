@@ -64,8 +64,8 @@ public class TabLayoutDemoActivity extends AppCompatActivity {
         int id = item.getItemId();
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            Intent intent=new Intent(this,SettingActivity.class);
-            startActivity(intent);
+            //Intent intent=new Intent(this,SettingActivity.class);
+            //startActivity(intent);
             return true;
         }
         return super.onOptionsItemSelected(item);

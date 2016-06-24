@@ -30,9 +30,8 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_home, container, false);
-        ib=(ImageButton)view.findViewById(R.id.img_link);
-        Fragment frag,frag2;
         manager = (FragmentManager) getFragmentManager();
+        ib=(ImageButton)view.findViewById(R.id.img_link);
         ib.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v)
             {
@@ -47,6 +46,6 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        return view;
     }
 }
