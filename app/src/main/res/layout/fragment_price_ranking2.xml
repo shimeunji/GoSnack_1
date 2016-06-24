@@ -1,0 +1,57 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/view2"
+    android:background="#ffffff"
+    tools:context="com.example.gosnack_1.PriceRanking1Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal">
+
+
+
+        <ImageButton
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:id="@+id/rank1"
+            android:background="@drawable/rank_01"
+            android:layout_margin="3dp" />
+
+        <ImageButton
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:id="@+id/rank2"
+            android:background="@drawable/rank_02"
+            android:layout_margin="3dp"
+            />
+        <ImageButton
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:id="@+id/rank3"
+            android:background="@drawable/rank_03"
+            android:layout_margin="3dp"
+            />
+        <ImageButton
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:id="@+id/rank4"
+            android:background="@drawable/rank_04"
+            android:layout_margin="3dp"
+            />
+        <ImageButton
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:id="@+id/rank5"
+            android:background="@drawable/rank_05"
+            android:layout_margin="3dp"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>
