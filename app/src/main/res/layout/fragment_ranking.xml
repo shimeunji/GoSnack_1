@@ -11,7 +11,7 @@
 
     <ImageButton
         android:layout_width="160dp"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
         android:id="@+id/button"
         android:background="@drawable/rank_but1"
         android:layout_gravity="top|left|bottom"
@@ -20,7 +20,7 @@
 
     <ImageButton
         android:layout_width="160dp"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
         android:id="@+id/button2"
         android:background="@drawable/rank_but2"
         android:layout_gravity="right|top"
