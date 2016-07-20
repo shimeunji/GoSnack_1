@@ -32,6 +32,7 @@ public class RankingFragment extends Fragment{
                         tran = manager.beginTransaction();
                         Fragment frag = new PriceRanking1Fragment();
                         tran.replace(R.id.ranking, frag);
+                        tran.addToBackStack(null);
                         tran.commit();
                         break;
                 }
@@ -46,6 +47,7 @@ public class RankingFragment extends Fragment{
                         tran = manager.beginTransaction();
                         Fragment frag2 = new PriceRanking2Fragment();
                         tran.replace(R.id.ranking, frag2);
+                        tran.addToBackStack(null);
                         tran.commit();
                         break;
                 }

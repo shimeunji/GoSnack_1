@@ -24,7 +24,6 @@ public class PriceRanking1Fragment extends Fragment {
         // Required empty public constructor
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -41,6 +40,7 @@ public class PriceRanking1Fragment extends Fragment {
                         tran = manager.beginTransaction();
                         Fragment frag1 = new SnackInfoFragment();
                         tran.replace(R.id.ranking, frag1);
+                        tran.addToBackStack(null);
                         tran.commit();
                         break;
                 }
@@ -55,6 +55,7 @@ public class PriceRanking1Fragment extends Fragment {
                         tran = manager.beginTransaction();
                         Fragment frag1 = new SnackInfoFragment();
                         tran.replace(R.id.ranking, frag1);
+                        tran.addToBackStack(null);
                         tran.commit();
                         break;
                 }
@@ -69,6 +70,7 @@ public class PriceRanking1Fragment extends Fragment {
                         tran = manager.beginTransaction();
                         Fragment frag1 = new SnackInfoFragment();
                         tran.replace(R.id.ranking, frag1);
+                        tran.addToBackStack(null);
                         tran.commit();
                         break;
                 }
@@ -83,6 +85,7 @@ public class PriceRanking1Fragment extends Fragment {
                         tran = manager.beginTransaction();
                         Fragment frag1 = new SnackInfoFragment();
                         tran.replace(R.id.ranking, frag1);
+                        tran.addToBackStack(null);
                         tran.commit();
                         break;
                 }
@@ -97,6 +100,7 @@ public class PriceRanking1Fragment extends Fragment {
                         tran = manager.beginTransaction();
                         Fragment frag1 = new SnackInfoFragment();
                         tran.replace(R.id.ranking, frag1);
+                        tran.addToBackStack(null);
                         tran.commit();
                         break;
                 }

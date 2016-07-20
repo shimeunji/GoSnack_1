@@ -41,6 +41,7 @@ public class PriceRanking2Fragment extends Fragment {
                         tran = manager.beginTransaction();
                         Fragment frag1 = new SnackInfoFragment();
                         tran.replace(R.id.ranking, frag1);
+                        tran.addToBackStack(null);
                         tran.commit();
                         break;
                 }
@@ -55,6 +56,7 @@ public class PriceRanking2Fragment extends Fragment {
                         tran = manager.beginTransaction();
                         Fragment frag1 = new SnackInfoFragment();
                         tran.replace(R.id.ranking, frag1);
+                        tran.addToBackStack(null);
                         tran.commit();
                         break;
                 }
@@ -69,6 +71,7 @@ public class PriceRanking2Fragment extends Fragment {
                         tran = manager.beginTransaction();
                         Fragment frag1 = new SnackInfoFragment();
                         tran.replace(R.id.ranking, frag1);
+                        tran.addToBackStack(null);
                         tran.commit();
                         break;
                 }
@@ -83,6 +86,7 @@ public class PriceRanking2Fragment extends Fragment {
                         tran = manager.beginTransaction();
                         Fragment frag1 = new SnackInfoFragment();
                         tran.replace(R.id.ranking, frag1);
+                        tran.addToBackStack(null);
                         tran.commit();
                         break;
                 }
@@ -97,6 +101,7 @@ public class PriceRanking2Fragment extends Fragment {
                         tran = manager.beginTransaction();
                         Fragment frag1 = new SnackInfoFragment();
                         tran.replace(R.id.ranking, frag1);
+                        tran.addToBackStack(null);
                         tran.commit();
                         break;
                 }

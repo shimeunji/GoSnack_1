@@ -16,7 +16,7 @@ import android.widget.ImageButton;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class HomeFragment extends Fragment {
+public class HomeFragment extends Fragment{
     ImageButton ib;
     FragmentManager manager;  //Fragment를 관리하는 클래스의 참조변수
     FragmentTransaction tran;
@@ -40,6 +40,7 @@ public class HomeFragment extends Fragment {
                         tran = manager.beginTransaction();
                         Fragment frag = new FacebookLink();
                         tran.replace(R.id.home, frag);
+                        tran.addToBackStack(null);
                         tran.commit();
                         break;
                 }
@@ -48,4 +49,6 @@ public class HomeFragment extends Fragment {
 
         return view;
     }
+
+
 }

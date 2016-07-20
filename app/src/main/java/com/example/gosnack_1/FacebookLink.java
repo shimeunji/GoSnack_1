@@ -30,11 +30,8 @@ public class FacebookLink extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_facebook_link, container, false);
         webView=(WebView)view.findViewById(R.id.link);
-
         webView.getSettings().setJavaScriptEnabled(true);      // 웹뷰에서 자바 스크립트 사용
-
         webView.loadUrl( "https://www.facebook.com/snackgwaza/?fref=ts" );            // 웹뷰에서 불러올 URL 입력
-
         webView.setWebViewClient(new MyWebViewClient());
 
         return view;

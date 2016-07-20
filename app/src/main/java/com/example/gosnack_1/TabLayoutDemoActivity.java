@@ -15,6 +15,15 @@ import android.view.MenuItem;
 
 public class TabLayoutDemoActivity extends AppCompatActivity {
 
+    public interface onKeyBackPressedListener {
+        public void onBack();
+    }
+    private onKeyBackPressedListener mOnKeyBackPressedListener;
+
+    public void setOnKeyBackPressedListener(onKeyBackPressedListener listener) {
+        mOnKeyBackPressedListener = listener;
+    } // In MyActivity
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,10 +33,10 @@ public class TabLayoutDemoActivity extends AppCompatActivity {
 
         TabLayout tabLayout=(TabLayout)findViewById(R.id.tab_layout);
 
-        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.homeicon));
-        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.rankicon));
-        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.labicon));
-        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.gifticon));
+        tabLayout.addTab(tabLayout.newTab().setText("홈"));
+        tabLayout.addTab(tabLayout.newTab().setText("랭킹"));
+        tabLayout.addTab(tabLayout.newTab().setText("과자 연구소"));
+        tabLayout.addTab(tabLayout.newTab().setText("뽑기"));
 
         final ViewPager viewPager=(ViewPager)findViewById(R.id.pager);
         final PagerAdapter adapter=new TabPagerAdapter(getSupportFragmentManager(),tabLayout.getTabCount());
