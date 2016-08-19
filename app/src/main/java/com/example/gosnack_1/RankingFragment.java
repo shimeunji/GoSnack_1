@@ -20,7 +20,7 @@ public class RankingFragment extends Fragment{
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_ranking, container, false);
-        Fragment frag,frag2;
+        Fragment frag,frag2,frag3;
         manager = (FragmentManager) getFragmentManager();
 
         ImageButton but_1 = (ImageButton) view.findViewById(R.id.button);
@@ -47,6 +47,21 @@ public class RankingFragment extends Fragment{
                         tran = manager.beginTransaction();
                         Fragment frag2 = new PriceRanking2Fragment();
                         tran.replace(R.id.ranking, frag2);
+                        tran.addToBackStack(null);
+                        tran.commit();
+                        break;
+                }
+            }
+        });
+        ImageButton but_3 = (ImageButton) view.findViewById(R.id.vote);
+        but_3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch (v.getId()) {
+                    case R.id.vote:
+                        tran = manager.beginTransaction();
+                        Fragment frag = new VoteFragment();
+                        tran.replace(R.id.ranking, frag);
                         tran.addToBackStack(null);
                         tran.commit();
                         break;

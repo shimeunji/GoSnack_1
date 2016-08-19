@@ -1,0 +1,75 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/random"
+    tools:context="layout.randomhome_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|top">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <ImageButton
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/b1"
+                android:background="@drawable/random_1"
+                android:layout_margin="15dp" />
+            <ImageButton
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/b2"
+                android:background="@drawable/random_1"
+                android:layout_margin="15dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <ImageButton
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/b3"
+                android:background="@drawable/random_1"
+                android:layout_margin="15dp" />
+            <ImageButton
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/b4"
+                android:background="@drawable/random_1"
+                android:layout_margin="15dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <ImageButton
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/b5"
+                android:background="@drawable/random_1"
+                android:layout_margin="15dp" />
+            <ImageButton
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/b6"
+                android:background="@drawable/random_1"
+                android:layout_margin="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

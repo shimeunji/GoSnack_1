@@ -2,13 +2,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/view2"
-    android:background="#ffffff"
-    tools:context="com.example.gosnack_1.PriceRanking1Fragment">
+    tools:context=".ThirdVoteFragment">
 
-    <ListView
+    <!-- TODO: Update blank fragment layout -->
+
+    <WebView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/list" />
-
+        android:id="@+id/link"
+        >
+    </WebView>
 </FrameLayout>
