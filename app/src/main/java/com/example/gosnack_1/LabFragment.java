@@ -25,7 +25,7 @@ import java.util.Random;
  * A simple {@link Fragment} subclass.
  */
 public class LabFragment extends Fragment{
-    ImageButton ib,ib2;
+    ImageButton ib,ib2,ib3;
     FragmentManager manager;  //Fragment를 관리하는 클래스의 참조변수
     FragmentTransaction tran;
 
@@ -43,6 +43,7 @@ public class LabFragment extends Fragment{
         // Inflate the layout for this fragment
         ib=(ImageButton)view.findViewById(R.id.lab1);
         ib2=(ImageButton)view.findViewById(R.id.lab2);
+        ib3=(ImageButton)view.findViewById(R.id.lab3);
         manager = (FragmentManager) getFragmentManager();
         ib.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v)
@@ -62,6 +63,19 @@ public class LabFragment extends Fragment{
             {
                 switch (v.getId()) {
                     case R.id.lab2:
+                        tran = manager.beginTransaction();
+                        Fragment frag = new FacebookLink();
+                        tran.replace(R.id.lab, frag);
+                        tran.commit();
+                        break;
+                }
+            }
+        });
+        ib3.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v)
+            {
+                switch (v.getId()) {
+                    case R.id.lab3:
                         tran = manager.beginTransaction();
                         Fragment frag = new FacebookLink();
                         tran.replace(R.id.lab, frag);

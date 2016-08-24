@@ -46,5 +46,4 @@ public class FirstVoteFragment extends Fragment {
             return true;
         }
     }
-
 }

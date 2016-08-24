@@ -36,10 +36,15 @@ public class TabLayoutDemoActivity extends AppCompatActivity {
 
         TabLayout tabLayout=(TabLayout)findViewById(R.id.tab_layout);
         Resources res = getResources();
-        tabLayout.addTab(tabLayout.newTab().setIcon(res.getDrawable(R.drawable.homeselect)));
+        /*tabLayout.addTab(tabLayout.newTab().setIcon(res.getDrawable(R.drawable.homeselect)));
         tabLayout.addTab(tabLayout.newTab().setIcon(res.getDrawable(R.drawable.rankingselector)));
         tabLayout.addTab(tabLayout.newTab().setIcon(res.getDrawable(R.drawable.homeselect)));
-        tabLayout.addTab(tabLayout.newTab().setIcon(res.getDrawable(R.drawable.homeselect)));
+        tabLayout.addTab(tabLayout.newTab().setIcon(res.getDrawable(R.drawable.homeselect)));*/
+
+        tabLayout.addTab(tabLayout.newTab().setText("홈"));
+       tabLayout.addTab(tabLayout.newTab().setText("과자랭킹"));
+        tabLayout.addTab(tabLayout.newTab().setText("과자실험실"));
+        tabLayout.addTab(tabLayout.newTab().setText("랜덤뽑기"));
 
         final ViewPager viewPager=(ViewPager)findViewById(R.id.pager);
         final PagerAdapter adapter=new TabPagerAdapter(getSupportFragmentManager(),tabLayout.getTabCount());
@@ -57,6 +62,7 @@ public class TabLayoutDemoActivity extends AppCompatActivity {
             {
 
             }
+
         });
     }
     @Override

@@ -22,6 +22,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.gosnack_1.SettingActivity"  android:label="설정"></activity>
     </application>
-    <activity android:name="com.example.gosnack_1.SettingActivity"  android:label="설정"></activity>
 </manifest>
