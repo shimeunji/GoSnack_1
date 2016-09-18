@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -34,6 +35,7 @@ public class TabLayoutDemoActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+
         TabLayout tabLayout=(TabLayout)findViewById(R.id.tab_layout);
         Resources res = getResources();
         /*tabLayout.addTab(tabLayout.newTab().setIcon(res.getDrawable(R.drawable.homeselect)));
@@ -42,7 +44,7 @@ public class TabLayoutDemoActivity extends AppCompatActivity {
         tabLayout.addTab(tabLayout.newTab().setIcon(res.getDrawable(R.drawable.homeselect)));*/
 
         tabLayout.addTab(tabLayout.newTab().setText("홈"));
-       tabLayout.addTab(tabLayout.newTab().setText("과자랭킹"));
+        tabLayout.addTab(tabLayout.newTab().setText("과자랭킹"));
         tabLayout.addTab(tabLayout.newTab().setText("과자실험실"));
         tabLayout.addTab(tabLayout.newTab().setText("랜덤뽑기"));
 

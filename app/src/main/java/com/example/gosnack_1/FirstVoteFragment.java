@@ -33,9 +33,7 @@ public class FirstVoteFragment extends Fragment {
         webView.getSettings().setJavaScriptEnabled(true);      // 웹뷰에서 자바 스크립트 사용
         webView.loadUrl( "https://goo.gl/forms/rVV1ly7ISACiCs8w2" );            // 웹뷰에서 불러올 URL 입력
         webView.setWebViewClient(new MyWebViewClient());
-
         return view;
-
     }
 
     private class MyWebViewClient extends WebViewClient {

@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">스낵먹으러 과자</string>
     <string name="action_settings">Settings</string>
+    <string name="facebook_app_id">291258811231294</string>
+
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
