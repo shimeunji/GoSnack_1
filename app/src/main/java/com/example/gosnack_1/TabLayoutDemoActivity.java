@@ -1,4 +1,4 @@
-package com.example.gosnack_1;
+ package com.example.gosnack_1;
 
 import android.content.Intent;
 import android.content.res.Resources;
@@ -90,4 +90,3 @@ public class TabLayoutDemoActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 }
-
