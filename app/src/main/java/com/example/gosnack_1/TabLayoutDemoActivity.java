@@ -16,6 +16,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.squareup.picasso.Picasso;
+
  public class TabLayoutDemoActivity extends AppCompatActivity {
 
      ViewPager pager;
@@ -67,6 +69,9 @@ import android.widget.Toast;
              }
 
          });
+
+         S.picasso = Picasso.with(this);
+         S.picasso.setIndicatorsEnabled(true);
      }
      @Override
      public boolean onCreateOptionsMenu(Menu menu) {

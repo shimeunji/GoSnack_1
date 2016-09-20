@@ -71,9 +71,7 @@ public class PriceRanking1Fragment extends Fragment {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_price_ranking1, container, false);
         listView = (ListView)view.findViewById(R.id.listview);
-
-
-
+        manager = (FragmentManager) getFragmentManager();
         Log.d(TAG, "retrofit 코드 진입");
         SnackServiece ss = SnackServiece.retrofit.create(SnackServiece.class);
         Call<List<Snack>> call = ss.getAllSnack();
@@ -97,7 +95,7 @@ public class PriceRanking1Fragment extends Fragment {
                         //String strText = (String) parent.getItemAtPosition(position);
                         tran = manager.beginTransaction();
                         Fragment frag = new SnackInfoFragment();
-                        tran.replace(R.id.view2, frag);
+                        tran.replace(R.id.view, frag);
                         tran.addToBackStack(null);
                         tran.commit();
                         // TODO : use strText
@@ -115,7 +113,6 @@ public class PriceRanking1Fragment extends Fragment {
         Log.d(TAG, "retrofit 밖");
 
         Log.d(TAG, "view 바로 앞");
-
 
         return view;
     }

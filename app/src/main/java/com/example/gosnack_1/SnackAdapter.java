@@ -1,6 +1,7 @@
 package com.example.gosnack_1;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,14 +19,14 @@ import java.util.List;
  * Created by 내컴퓨터 on 2016-09-19.
  */
 public class SnackAdapter extends BaseAdapter {
+    private static final String TAG ="스낵:SAdapter" ;
     private Context mContext = null;
     private int layout = 0;
     private ArrayList<Snack> snacks = null;
     private LayoutInflater inflater = null;
-    public static final String IMG_URL = "http://gosnack.emirim.kr/img/";
+
     public static String rank_url;
     public static String info_url;
-
 
     public SnackAdapter(Context c, int l, ArrayList<Snack> s) {
         this.mContext = c;
@@ -53,11 +54,13 @@ public class SnackAdapter extends BaseAdapter {
         }
         ImageView img=(ImageView)convertView.findViewById(R.id.img);
        // img.setImageBitmap(snacks.get(position).getImg_rank());
-        rank_url=IMG_URL+snacks.get(position).getImg_rank();
-        info_url=IMG_URL+snacks.get(position).getImg_info();
-        Picasso.with(mContext).load(rank_url).into(img);
-
+        rank_url=S.IMG_URL+snacks.get(position).getImg_rank();
+        //info_url=S.IMG_URL+snacks.get(position).getImg_info();
+        Log.d(TAG, "그림 url-:" + rank_url);
+        Picasso.with(mContext).setIndicatorsEnabled(true);
+        Picasso.with(mContext).load(rank_url)
+                .error(R.drawable.home_image)
+                .into(img);
         return convertView;
-
     }
 }
