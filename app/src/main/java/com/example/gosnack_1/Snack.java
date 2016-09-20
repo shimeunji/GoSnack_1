@@ -9,10 +9,8 @@ public class Snack {
     @SerializedName("id") String id;
     @SerializedName("name") String name;
     @SerializedName("company") String company;
-    @SerializedName("quantity") String quantity;
-    @SerializedName("cal") String cal;
-    @SerializedName("price") String price;
-    @SerializedName("img_link") String img_link;
+    @SerializedName("img_rank") String img_rank;
+    @SerializedName("img_info") String img_info;
 
 //    @SerializedName("result")
 //    Result result;
@@ -30,14 +28,13 @@ public class Snack {
 //        public String getCode() {return code;}
 //    }
 //
-    public Snack(String id,String name,String company,String quantity,String cal,String price,String img_link){
+    public Snack(String id,String name,String company,String img_rank,String img_info){
         this.id=id;
         this.name=name;
         this.company=company;
-        this.quantity=quantity;
-        this.cal=cal;
-        this.price=price;
-        this.img_link=img_link;
+        this.img_rank=img_rank;
+        this.img_info=img_info;
+
     }
 
     public String getId() {
@@ -52,22 +49,6 @@ public class Snack {
         return company;
     }
 
-    public String getQuantity() {
-        return quantity;
-    }
-
-    public String getCal() {
-        return cal;
-    }
-
-    public String getPrice() {
-        return price;
-    }
-
-    public String getImg_link() {
-        return img_link;
-    }
-
     public void setId(String id) {
         this.id = id;
     }
@@ -80,19 +61,11 @@ public class Snack {
         this.company = company;
     }
 
-    public void setQuantity(String quantity) {
-        this.quantity = quantity;
-    }
+    public String getImg_rank(){ return img_rank; }
+    public String getImg_info(){ return img_info; }
 
-    public void setCal(String cal) {
-        this.cal = cal;
-    }
+    public void setImg_rank(String img_rank){ this.img_rank=img_rank;}
+    public void setImg_info(String img_info){ this.img_info=img_info;}
 
-    public void setPrice(String price) {
-        this.price = price;
-    }
 
-    public void setImg_link(String img_link) {
-        this.img_link = img_link;
-    }
 }

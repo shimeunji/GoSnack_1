@@ -3,17 +3,6 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-        <ImageButton
-            android:id="@+id/home_link"
-            android:layout_width="match_parent"
-            android:layout_height="240dp"
-            android:background="@drawable/homelink"/>
-
-        <ImageButton
-            android:id="@+id/home_link2"
-            android:layout_width="match_parent"
-            android:layout_height="240dp"
-            android:background="@drawable/homelink"/>
 
 </RelativeLayout>
 

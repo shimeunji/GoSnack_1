@@ -6,7 +6,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,6 +22,10 @@ public class SnackAdapter extends BaseAdapter {
     private int layout = 0;
     private ArrayList<Snack> snacks = null;
     private LayoutInflater inflater = null;
+    public static final String IMG_URL = "http://gosnack.emirim.kr/img/";
+    public static String rank_url;
+    public static String info_url;
+
 
     public SnackAdapter(Context c, int l, ArrayList<Snack> s) {
         this.mContext = c;
@@ -44,14 +51,13 @@ public class SnackAdapter extends BaseAdapter {
         {
             convertView=inflater.inflate(layout,parent,false);
         }
-        TextView name=(TextView)convertView.findViewById(R.id.name);
-        name.setText(snacks.get(position).getName());
-
-        TextView company=(TextView)convertView.findViewById(R.id.company);
-        company.setText(snacks.get(position).getCompany());
+        ImageView img=(ImageView)convertView.findViewById(R.id.img);
+       // img.setImageBitmap(snacks.get(position).getImg_rank());
+        rank_url=IMG_URL+snacks.get(position).getImg_rank();
+        info_url=IMG_URL+snacks.get(position).getImg_info();
+        Picasso.with(mContext).load(rank_url).into(img);
 
         return convertView;
 
     }
-
 }

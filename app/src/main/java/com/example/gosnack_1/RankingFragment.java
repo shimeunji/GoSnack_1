@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,14 +14,14 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toolbar;
 
-public class RankingFragment extends Fragment{
+public class RankingFragment extends Fragment {
 
     FragmentManager manager;  //Fragment를 관리하는 클래스의 참조변수
     FragmentTransaction tran;  //실제로 Fragment를 추가/삭제/재배치 하는 클래스의 참조변수
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_ranking, container, false);
-        Fragment frag,frag2,frag3;
+        Fragment frag, frag2, frag3;
         manager = (FragmentManager) getFragmentManager();
 
         ImageButton but_1 = (ImageButton) view.findViewById(R.id.button);
@@ -68,6 +69,13 @@ public class RankingFragment extends Fragment{
                 }
             }
         });
+
+        ViewPager viewPager = (ViewPager) view.findViewById(R.id.pager);
+        CustomAdapter2 adapter= new CustomAdapter2(getActivity().getLayoutInflater());
+        viewPager.setAdapter(adapter);
+        viewPager.setPageMargin(getResources().getDisplayMetrics().widthPixels/-2);
+
         return view;
     }
+
 }

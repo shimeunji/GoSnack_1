@@ -9,11 +9,11 @@ import android.widget.ImageView;
 /**
  * Created by 내컴퓨터 on 2016-08-17.
  */
-public class CustomAdapter extends PagerAdapter {
+public class CustomAdapter2 extends PagerAdapter {
 
     LayoutInflater inflater;
 
-    public CustomAdapter(LayoutInflater inflater) {
+    public CustomAdapter2(LayoutInflater inflater) {
         // TODO Auto-generated constructor stub
 
         //전달 받은 LayoutInflater를 멤버변수로 전달
@@ -47,7 +47,7 @@ public class CustomAdapter extends PagerAdapter {
 
         //ImageView에 현재 position 번째에 해당하는 이미지를 보여주기 위한 작업
         //현재 position에 해당하는 이미지를 setting
-        img.setImageResource(R.drawable.home_img1 +position);
+        img.setImageResource(R.drawable.rank1+position);
 
         //ViewPager에 만들어 낸 View 추가
         container.addView(view);
@@ -76,7 +76,4 @@ public class CustomAdapter extends PagerAdapter {
         // TODO Auto-generated method stub
         return v==obj;
     }
-
-
-
 }

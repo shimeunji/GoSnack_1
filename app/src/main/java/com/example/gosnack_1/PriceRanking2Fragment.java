@@ -55,7 +55,7 @@ public class PriceRanking2Fragment extends Fragment {
     final static String TAG = "스낵:PriceRank2F";
     FragmentManager manager;  //Fragment를 관리하는 클래스의 참조변수
     FragmentTransaction tran;
-    ArrayList<Snack> snacks;
+    public static ArrayList<Snack> snacks;
     SnackAdapter myadapter;
     ListView listView;
 
@@ -86,6 +86,21 @@ public class PriceRanking2Fragment extends Fragment {
                 }
                 myadapter=new SnackAdapter(getActivity().getApplicationContext(), R.layout.listview_item, snacks);
                 listView.setAdapter(myadapter);
+                listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView parent, View v, int position, long id) {
+                        // get TextView's Text.
+                        //String strText = (String) parent
+                        // .getItemAtPosition(position) ;
+                        S.snack = snacks.get(position);
+                        tran = manager.beginTransaction();
+                        Fragment frag = new SnackInfoFragment();
+                        tran.replace(R.id.view2, frag);
+                        tran.addToBackStack(null);
+                        tran.commit();
+                        // TODO : use strText
+                    }
+                }) ;
 
                 Log.d(TAG, "retrofit 성공 끝");
             }

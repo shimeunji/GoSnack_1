@@ -4,42 +4,62 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/ranking"
-    android:background="#ffffff"
+    android:background="#f1f0f0"
     tools:context=".HomeFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll"
+        android:layout_gravity="center_horizontal|bottom"></ScrollView>
 
-    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_gravity="right|top">
+        <!-- TODO: Update blank fragment layout -->
 
-    <ImageButton
-        android:layout_width="150dp"
-        android:layout_height="45dp"
-        android:id="@+id/button"
-        android:background="@drawable/button_03"
-        android:layout_gravity="top|left|bottom"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="15dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="horizontal">
 
-    <ImageButton
-        android:layout_width="150dp"
-        android:layout_height="45dp"
-        android:id="@+id/button2"
-        android:background="@drawable/button_04"
-        android:layout_gravity="right|top"
-        android:layout_marginRight="30dp"
-        android:layout_marginTop="15dp" />
+            <ImageButton
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:id="@+id/button"
+                android:background="@drawable/button_01"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp" />
+
+            <ImageButton
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:id="@+id/button2"
+                android:background="@drawable/button_02"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp" />
+
+
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp" >
+        </android.support.v4.view.ViewPager>
 
         <ImageButton
             android:layout_width="match_parent"
-            android:layout_height="180dp"
+            android:layout_height="110dp"
             android:id="@+id/vote"
             android:background="@drawable/rank_front"
-            android:layout_marginTop="70dp" />
+            android:layout_marginTop="40dp"
+            />
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:src="@drawable/ranking_back"
-        android:layout_gravity="bottom"
-        android:layout_marginBottom="30dp" />
-
-
+    </LinearLayout>
 </FrameLayout>
+

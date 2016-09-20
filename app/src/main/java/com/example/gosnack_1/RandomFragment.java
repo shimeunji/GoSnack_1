@@ -37,7 +37,6 @@ public class RandomFragment extends Fragment {
                 int i = Math.abs(rand.nextInt(19) + 1);
                 AlertDialog.Builder dialog = new AlertDialog.Builder(getActivity());
                 dialog.setTitle("과자 추천");
-                dialog.setIcon(R.drawable.icon);
                 dialog.setMessage(snack[i]);
                 dialog.show();
                 String str = "오늘의 과자" + snack[i];
