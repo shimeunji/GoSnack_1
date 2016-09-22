@@ -3,10 +3,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/view2"
+
     tools:context=".HomeFragment">
-    <ListView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/listview">
-    </ListView>
+        android:orientation="vertical">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:dividerHeight="0px"
+            android:divider="#ffffff"
+            android:scaleType="fitXY"
+            android:id="@+id/listview" />
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="11dp"
+            android:layout_gravity="center"
+            android:src="@drawable/copy"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            />
+    </LinearLayout>
 </FrameLayout>

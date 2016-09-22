@@ -5,61 +5,111 @@
     android:layout_height="match_parent"
     android:id="@+id/ranking"
     android:background="#f1f0f0"
-    tools:context=".HomeFragment">
+    tools:context=".HomeFragment"
+    >
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/scroll"
-        android:layout_gravity="center_horizontal|bottom"></ScrollView>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:weightSum="1"
-        android:layout_gravity="right|top">
-        <!-- TODO: Update blank fragment layout -->
+        android:layout_gravity="center_horizontal|bottom">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:layout_gravity="right|top">
+            <!-- TODO: Update blank fragment layout -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="168dp"
+                    android:layout_height="47dp"
+                    android:id="@+id/button"
+                    android:background="@drawable/amount"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp" />
+
+                <ImageButton
+                    android:layout_width="168dp"
+                    android:layout_height="47dp"
+                    android:id="@+id/button2"
+                    android:background="@drawable/button_04"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="10dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:background="@drawable/voteback"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="18dp"
+                        android:src="@drawable/votetext"/>
+
+                    <ImageButton
+                        android:layout_width="59dp"
+                        android:layout_height="27dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginLeft="69dp"
+                        android:background="@drawable/more"
+                        android:id="@+id/more" />
+                </LinearLayout>
+
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="400dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="10dp"
+                    >
+                </android.support.v4.view.ViewPager>
+            </LinearLayout>
 
             <ImageButton
-                android:layout_width="150dp"
-                android:layout_height="45dp"
-                android:id="@+id/button"
-                android:background="@drawable/button_01"
-                android:layout_marginRight="5dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp" />
+                android:layout_width="match_parent"
+                android:layout_height="113dp"
+                android:id="@+id/vote"
+                android:background="@drawable/rank_front"
+                android:layout_marginTop="11dp"
+                />
 
             <ImageButton
-                android:layout_width="150dp"
-                android:layout_height="45dp"
-                android:id="@+id/button2"
-                android:background="@drawable/button_02"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="10dp" />
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/homequize"
+                android:background="@drawable/homequize"
+                android:layout_marginTop="8dp"
+                />
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="11dp"
+                android:layout_gravity="center"
+                android:src="@drawable/copy"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                />
 
 
         </LinearLayout>
-
-        <android.support.v4.view.ViewPager
-            android:id="@+id/pager"
-            android:layout_width="400dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="10dp" >
-        </android.support.v4.view.ViewPager>
-
-        <ImageButton
-            android:layout_width="match_parent"
-            android:layout_height="110dp"
-            android:id="@+id/vote"
-            android:background="@drawable/rank_front"
-            android:layout_marginTop="40dp"
-            />
-
-    </LinearLayout>
+    </ScrollView>
 </FrameLayout>
-

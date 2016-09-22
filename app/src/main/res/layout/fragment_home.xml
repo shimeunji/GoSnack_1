@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/home"
+    android:id="@+id/view"
     tools:context=".HomeFragment"
     android:background="#f1f0f0">
     <ScrollView
@@ -13,60 +13,74 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:id="@+id/viewpa"
             android:orientation="vertical"
             android:weightSum="1">
             <!-- TODO: Update blank fragment layout -->
 
-
-            <android.support.v4.view.ViewPager
-                android:id="@+id/pager"
-                android:layout_width="match_parent"
-                android:layout_height="205dp"
+            <LinearLayout
                 android:layout_marginTop="10dp"
-                android:scaleType="fitXY"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp">
-            </android.support.v4.view.ViewPager>
-
-            <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="130dp"
-                android:src="@drawable/page01"
-                android:layout_below="@+id/but_home"
+                android:layout_height="222dp"
+                android:background="@drawable/voteback">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="205dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="fitXY"
+
+                    >
+                </android.support.v4.view.ViewPager>
+            </LinearLayout>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="146dp"
+                android:background="@drawable/home1"
+                android:id="@+id/snackid2"
+                android:layout_below="@+id/but_home1"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_gravity="center_horizontal|bottom"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="7dp"
                 android:layout_weight="2.10"
                 android:scaleType="fitXY"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"/>
+                />
             />
 
-            <ImageView
+            <ImageButton
                 android:layout_width="match_parent"
-                android:layout_height="130dp"
-                android:src="@drawable/page02"
-                android:layout_below="@+id/but_home"
+                android:layout_height="146dp"
+                android:id="@+id/snackid13"
+                android:background="@drawable/home2"
+                android:layout_below="@+id/but_home2"
                 android:layout_alignParentLeft="true"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="3dp"
                 android:scaleType="fitXY"
-                android:layout_marginRight="5dp"
-                android:layout_marginLeft="5dp"/>
+                />
 
-            <ImageView
+            <ImageButton
                 android:layout_width="match_parent"
-                android:layout_height="130dp"
-                android:src="@drawable/page03"
-                android:layout_below="@+id/but_home"
+                android:layout_height="146dp"
+                android:background="@drawable/home3"
+                android:id="@+id/snackid16"
+                android:layout_below="@+id/but_home3"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="3dp"
                 android:layout_marginBottom="10dp"
-                android:scaleType="fitXY"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"/>
+                android:scaleType="fitXY" />
 
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="11dp"
+                android:layout_gravity="center"
+                android:src="@drawable/copy"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                />
         </LinearLayout>
     </ScrollView>
 </FrameLayout>

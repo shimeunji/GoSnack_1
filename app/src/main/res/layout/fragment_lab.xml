@@ -8,9 +8,8 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-
     <ScrollView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/scrollView2">
 
@@ -20,31 +19,53 @@
             android:orientation="vertical">
 
             <ImageButton
-                android:layout_width="match_parent"
-                android:layout_height="230dp"
-                android:id="@+id/lab1"
-                android:background="@drawable/lab1"
-                android:layout_marginTop="10dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_margin="20dp" />
-            <ImageButton
-                android:layout_width="match_parent"
-                android:layout_height="230dp"
+                android:layout_width="350dp"
+                android:layout_height="226dp"
                 android:id="@+id/lab2"
-                android:background="@drawable/lab2"
                 android:layout_marginTop="10dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+
                 android:layout_gravity="center_horizontal"
-                android:layout_margin="20dp" />
+
+                android:background="@drawable/youtube2"
+
+                />
+
             <ImageButton
-                android:layout_width="match_parent"
-                android:layout_height="230dp"
-                android:id="@+id/lab3"
-                android:background="@drawable/lab2"
-                android:layout_marginTop="10dp"
+                android:layout_width="350dp"
+                android:layout_height="226dp"
+                android:id="@+id/lab1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="@drawable/youtube1"
                 android:layout_gravity="center_horizontal"
-                android:layout_margin="20dp" />
+
+                />
+
+            <ImageButton
+                android:layout_width="350dp"
+                android:layout_height="226dp"
+                android:id="@+id/lab3"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+
+                android:background="@drawable/youtube3"
+                android:layout_gravity="center_horizontal"
+
+                />
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="11dp"
+                android:layout_gravity="center"
+                android:src="@drawable/copy"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                />
         </LinearLayout>
 
 
     </ScrollView>
+
 </FrameLayout>
