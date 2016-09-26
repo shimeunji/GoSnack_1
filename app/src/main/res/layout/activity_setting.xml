@@ -49,5 +49,4 @@
     android:text="카카오톡 공유하기"
     android:onClick="shareKakao"/>
 
-
 </LinearLayout>

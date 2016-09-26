@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "125301520736",
+    "firebase_url": "https://gosnack-ee0f9.firebaseio.com",
+    "project_id": "gosnack-ee0f9",
+    "storage_bucket": "gosnack-ee0f9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125301520736:android:02245f72c4f67970",
+        "android_client_info": {
+          "package_name": "kr.hs.emirim.gosnack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125301520736-q8m5dg63dern4egmpi1rhc97ee704aqq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnckTkvdH2GQLGx1bGqFexUanz1dc9_kE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
