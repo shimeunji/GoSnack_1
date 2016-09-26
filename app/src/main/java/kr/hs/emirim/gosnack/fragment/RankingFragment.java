@@ -1,4 +1,4 @@
-package kr.hs.emirim.gosnack;
+package kr.hs.emirim.gosnack.fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -10,6 +10,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.Toast;
+
+import kr.hs.emirim.gosnack.CustomAdapter2;
+import kr.hs.emirim.gosnack.PriceRanking1Fragment;
+import kr.hs.emirim.gosnack.PriceRanking2Fragment;
+import kr.hs.emirim.gosnack.R;
+import kr.hs.emirim.gosnack.VoteFragment;
 
 
 public class RankingFragment extends Fragment {

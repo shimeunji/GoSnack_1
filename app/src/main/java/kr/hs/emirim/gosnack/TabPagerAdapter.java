@@ -4,6 +4,11 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import kr.hs.emirim.gosnack.fragment.HomeFragment;
+import kr.hs.emirim.gosnack.fragment.LabFragment;
+import kr.hs.emirim.gosnack.fragment.RandomFragment;
+import kr.hs.emirim.gosnack.fragment.RankingFragment;
+
 /**
  * Created by 내컴퓨터 on 2016-06-18.
  */

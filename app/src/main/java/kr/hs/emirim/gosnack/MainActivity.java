@@ -17,6 +17,7 @@
 package kr.hs.emirim.gosnack;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -27,8 +28,11 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.google.firebase.auth.FirebaseAuth;
-import kr.hs.emirim.gosnack.fragment.MyPostsFragment;
-import kr.hs.emirim.gosnack.fragment.MyTopPostsFragment;
+
+import kr.hs.emirim.gosnack.fragment.HomeFragment;
+import kr.hs.emirim.gosnack.fragment.LabFragment;
+import kr.hs.emirim.gosnack.fragment.RandomFragment;
+import kr.hs.emirim.gosnack.fragment.RankingFragment;
 import kr.hs.emirim.gosnack.fragment.RecentPostsFragment;
 
 public class  MainActivity extends BaseActivity {
@@ -46,14 +50,17 @@ public class  MainActivity extends BaseActivity {
         // Create the adapter that will return a fragment for each section
         mPagerAdapter = new FragmentPagerAdapter(getSupportFragmentManager()) {
             private final Fragment[] mFragments = new Fragment[] {
-                    new RecentPostsFragment(),
-                    new MyPostsFragment(),
-                    new MyTopPostsFragment(),
+                    new HomeFragment(),
+                    new RankingFragment(),
+                    new LabFragment(),
+                    new RandomFragment(),
+                    new RecentPostsFragment()
             };
             private final String[] mFragmentNames = new String[] {
-                    getString(R.string.heading_recent),
-                    getString(R.string.heading_my_posts),
-                    getString(R.string.heading_my_top_posts)
+                    "홈","과자랭킹","과자실험실","랜덤뽑기","게시판"
+                    //getString(R.string.heading_recent),
+                    //getString(R.string.heading_my_posts),
+                    //getString(R.string.heading_my_top_posts)
             };
             @Override
             public Fragment getItem(int position) {
@@ -72,6 +79,7 @@ public class  MainActivity extends BaseActivity {
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mPagerAdapter);
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
+        tabLayout.setBackgroundColor(Color.WHITE);
         tabLayout.setupWithViewPager(mViewPager);
 
         // Button launches NewPostActivity
@@ -97,9 +105,15 @@ public class  MainActivity extends BaseActivity {
             startActivity(new Intent(this, SignInActivity.class));
             finish();
             return true;
-        } else {
+        } else if(i==R.id.action_settings)
+        {
+            startActivity(new Intent(this,SettingActivity.class));
+            return true;
+        }
+        else {
             return super.onOptionsItemSelected(item);
         }
+
     }
 
 }

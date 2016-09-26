@@ -1,4 +1,4 @@
-package kr.hs.emirim.gosnack;
+package kr.hs.emirim.gosnack.fragment;
 
 
 import android.content.Intent;
@@ -18,6 +18,12 @@ import android.widget.Toast;
 
 import java.util.List;
 
+import kr.hs.emirim.gosnack.CustomAdapter;
+import kr.hs.emirim.gosnack.R;
+import kr.hs.emirim.gosnack.S;
+import kr.hs.emirim.gosnack.Snack;
+import kr.hs.emirim.gosnack.SnackInfoFragment;
+import kr.hs.emirim.gosnack.SnackServiece;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

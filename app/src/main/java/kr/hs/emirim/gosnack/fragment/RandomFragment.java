@@ -1,4 +1,4 @@
-package kr.hs.emirim.gosnack;
+package kr.hs.emirim.gosnack.fragment;
 
 
 import android.os.Bundle;
@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 
 import java.util.Random;
+
+import kr.hs.emirim.gosnack.R;
 
 /**
  * A simple {@link Fragment} subclass.

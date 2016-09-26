@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:id="@+id/ranking"
     android:background="#f1f0f0"
-    tools:context=".HomeFragment"
+    tools:context=".fragment.HomeFragment"
     >
     <ScrollView
         android:layout_width="match_parent"
