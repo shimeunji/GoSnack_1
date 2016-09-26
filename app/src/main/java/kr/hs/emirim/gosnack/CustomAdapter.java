@@ -1,5 +1,7 @@
 package kr.hs.emirim.gosnack;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -50,7 +52,10 @@ public class CustomAdapter extends PagerAdapter {
         img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Toast.makeText(inflater.getContext(),"아직 준비중인 서비스입니다 ^_^",Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/snackgwaza/?fref=ts"));
+                inflater.getContext().startActivity(intent);
             }
         });
         //ImageView에 현재 position 번째에 해당하는 이미지를 보여주기 위한 작업
@@ -84,5 +89,4 @@ public class CustomAdapter extends PagerAdapter {
         // TODO Auto-generated method stub
         return v == obj;
     }
-
 }

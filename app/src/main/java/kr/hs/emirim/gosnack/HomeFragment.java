@@ -75,7 +75,7 @@ public class HomeFragment extends Fragment {
         //ViewPager에 Adapter 설정
         viewPager.setAdapter(adapter);
 
-        viewPager.setPageMargin(getResources().getDisplayMetrics().widthPixels / -9);
+                viewPager.setPageMargin(getResources().getDisplayMetrics().widthPixels / -8);
         viewPager.setOffscreenPageLimit(2);
 
 

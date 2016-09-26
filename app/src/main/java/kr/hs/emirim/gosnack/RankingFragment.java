@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 
 public class RankingFragment extends Fragment {
@@ -86,6 +87,17 @@ public class RankingFragment extends Fragment {
         CustomAdapter2 adapter= new CustomAdapter2(getActivity().getLayoutInflater());
         viewPager.setAdapter(adapter);
         viewPager.setPageMargin(getResources().getDisplayMetrics().widthPixels/-2);
+
+        ImageButton homequize = (ImageButton) view.findViewById(R.id.homequize);
+        homequize.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch (v.getId()) {
+                    case R.id.homequize:
+                        Toast.makeText(getContext(), "아직 준비중인 서비스입니다^_^", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
 
         return view;
     }

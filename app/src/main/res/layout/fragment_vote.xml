@@ -22,7 +22,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="170dp"
                 android:id="@+id/vote_1"
-                android:background="@drawable/vote_sam1"
+                android:background="@drawable/vote"
                 android:paddingTop="20dp"
                 android:layout_gravity="center_horizontal|top" />
 
@@ -30,14 +30,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="170dp"
                 android:id="@+id/vote_2"
-                android:background="@drawable/vote_sam1"
+                android:background="@drawable/vote"
                 android:layout_marginTop="20dp"/>
 
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="170dp"
                 android:id="@+id/vote_3"
-                android:background="@drawable/vote_sam1"
+                android:background="@drawable/vote"
                 android:layout_marginTop="20dp"/>
 
         </LinearLayout>
