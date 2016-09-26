@@ -28,6 +28,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.squareup.picasso.Picasso;
 
 import kr.hs.emirim.gosnack.fragment.HomeFragment;
 import kr.hs.emirim.gosnack.fragment.LabFragment;
@@ -89,6 +90,9 @@ public class  MainActivity extends BaseActivity {
                 startActivity(new Intent(MainActivity.this, NewPostActivity.class));
             }
         });
+
+        S.picasso = Picasso.with(this);
+        //S.picasso.setIndicatorsEnabled(true);
     }
 
     @Override
