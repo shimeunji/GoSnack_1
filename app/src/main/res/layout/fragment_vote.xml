@@ -1,45 +1,65 @@
-  <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".VoteFragment"
-      android:id="@+id/ranking"
-      android:background="#ffffff"
-    android:paddingTop="20dp">
+    android:background="#ffffff"
+    tools:context=".FirstVoteFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/scrollView"
-         >
-        <LinearLayout
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="달콤한 맛 과자 갑은?"
+            android:textSize="20dp"
+            android:background="#ffd3d3"
+            android:textColor="#000000"
+            android:paddingLeft="5dp"/>
+
+        <RadioButton
+            android:text="바나나킥"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton1" />
+        <RadioButton
+            android:text="칙촉"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton2" />
+        <RadioButton
+            android:text="허니버터칩"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton3" />
+        <RadioButton
+            android:text="꿀꽈배기"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:id="@+id/radioButton4" />
+        <RadioButton
+            android:text="콘초"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:id="@+id/radioButton5" />
 
-            <ImageButton
-                android:layout_width="match_parent"
-                android:layout_height="170dp"
-                android:id="@+id/vote_1"
-                android:background="@drawable/vote"
-                android:paddingTop="20dp"
-                android:layout_gravity="center_horizontal|top" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="제출하기"
+            android:id="@+id/bt"/>
 
-            <ImageButton
-                android:layout_width="match_parent"
-                android:layout_height="170dp"
-                android:id="@+id/vote_2"
-                android:background="@drawable/vote"
-                android:layout_marginTop="20dp"/>
-
-            <ImageButton
-                android:layout_width="match_parent"
-                android:layout_height="170dp"
-                android:id="@+id/vote_3"
-                android:background="@drawable/vote"
-                android:layout_marginTop="20dp"/>
-
-        </LinearLayout>
-    </ScrollView>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/show"
+            />
+    </LinearLayout>
 </FrameLayout>

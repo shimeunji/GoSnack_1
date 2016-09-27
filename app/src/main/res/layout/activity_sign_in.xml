@@ -3,11 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/splash"
+    android:background="@drawable/login"
     android:paddingBottom="30dp"
     android:paddingLeft="30dp"
     android:paddingRight="30dp"
-    android:paddingTop="415dp"
+    android:paddingTop="380dp"
     tools:context="com.google.firebase.quickstart.database.SignInActivity">
 
 
@@ -63,6 +63,36 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layout_buttons"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이메일 형식으로 써주세요!"
+            android:textColor="#979797"
+            android:textSize="10dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layout_buttons"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비밀번호는 6자리 이상으로 해주세요!"
+            android:textColor="#979797"
+            android:textSize="10dp"
+            />
+    </LinearLayout>
 
 
 </RelativeLayout>

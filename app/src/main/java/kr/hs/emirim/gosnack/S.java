@@ -14,6 +14,7 @@ public class S {
     public static String img;
     public static Picasso picasso;
     public static ArrayList<Snack> snacks;
+    public static int cn1=0,cn2=0,cn3=0,cn4=0,cn5=0;
 
 
 }

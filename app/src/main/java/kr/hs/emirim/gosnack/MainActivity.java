@@ -36,6 +36,10 @@ import kr.hs.emirim.gosnack.fragment.RandomFragment;
 import kr.hs.emirim.gosnack.fragment.RankingFragment;
 import kr.hs.emirim.gosnack.fragment.RecentPostsFragment;
 
+import static kr.hs.emirim.gosnack.R.color.colorAccent;
+import static kr.hs.emirim.gosnack.R.color.colorPrimary;
+import static kr.hs.emirim.gosnack.R.color.colorPrimaryDark;
+
 public class  MainActivity extends BaseActivity {
 
     private static final String TAG = "MainActivity";
@@ -82,6 +86,10 @@ public class  MainActivity extends BaseActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setBackgroundColor(Color.WHITE);
         tabLayout.setupWithViewPager(mViewPager);
+        //tabLayout.setTextAlignment();
+        //tabLayout.setTextDirection();
+        tabLayout.setTabTextColors(Color.BLACK,colorAccent); //선택했을때 색깔
+
 
         // Button launches NewPostActivity
         findViewById(R.id.fab_new_post).setOnClickListener(new View.OnClickListener() {
