@@ -11,6 +11,6 @@
         android:dividerHeight="0px"
         android:divider="#ffffff"
         android:id="@+id/img"
-        android:minHeight="80dp"
+        android:minHeight="70dp"
         />
 </LinearLayout>

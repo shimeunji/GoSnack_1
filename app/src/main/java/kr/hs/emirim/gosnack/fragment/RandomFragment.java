@@ -46,5 +46,4 @@ public class RandomFragment extends Fragment {
         });
         return view;
     }
-
 }

@@ -23,6 +23,7 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -57,12 +58,12 @@ public class  MainActivity extends BaseActivity {
             private final Fragment[] mFragments = new Fragment[] {
                     new HomeFragment(),
                     new RankingFragment(),
-                    new LabFragment(),
+                      new LabFragment(),
                     new RandomFragment(),
                     new RecentPostsFragment()
             };
             private final String[] mFragmentNames = new String[] {
-                    "홈","과자랭킹","과자실험실","랜덤뽑기","게시판"
+                    "홈","과자랭킹","실험실","랜덤뽑기","게시판"
                     //getString(R.string.heading_recent),
                     //getString(R.string.heading_my_posts),
                     //getString(R.string.heading_my_top_posts)

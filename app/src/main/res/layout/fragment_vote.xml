@@ -15,7 +15,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
+            android:layout_marginLeft="20dp"
             android:text="달콤한 맛 과자 갑은?"
             android:textSize="20dp"
             android:background="#ffd3d3"
@@ -26,39 +26,49 @@
             android:text="바나나킥"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginLeft="15dp"
             android:id="@+id/radioButton1" />
         <RadioButton
             android:text="칙촉"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:padding="10dp"
             android:id="@+id/radioButton2" />
         <RadioButton
             android:text="허니버터칩"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginLeft="15dp"
             android:id="@+id/radioButton3" />
         <RadioButton
             android:text="꿀꽈배기"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="15dp"
+            android:padding="10dp"
+            android:layout_marginLeft="15dp"
             android:id="@+id/radioButton4" />
         <RadioButton
             android:text="콘초"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="15dp"
+            android:padding="10dp"
+            android:layout_marginLeft="15dp"
             android:id="@+id/radioButton5" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="제출하기"
+            android:layout_marginLeft="30dp"
             android:id="@+id/bt"/>
 
         <TextView
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
+            android:textSize="15dp"
             android:id="@+id/show"
             />
     </LinearLayout>

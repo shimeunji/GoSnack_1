@@ -9,9 +9,8 @@
 
     <ImageButton
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
         android:background="@drawable/random"
         android:id="@+id/but_r"
         android:layout_gravity="center"
-    />
+        android:layout_height="460dp" />
 </FrameLayout>
